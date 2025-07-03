@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+    <style>
+        body{
+            background-color: #7fc0eb;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var numA = parseInt(prompt("Ingrese el primer número:"));
+        var numB = parseInt(prompt("Ingrese el segundo número:"));
+        var edad = parseInt(prompt("Ingrese su edad:"));
+        var dia = parseInt(prompt("Ingrese un Numero Comprendido ente 1 y 7:"));
+        var suma = numA + numB;
+        if(edad < 18) {
+            document.write("<h1>Usted es menor de edad</h1>");
+        }else if(edad >= 18 && edad < 55) {
+                    document.write("<h1>Usted es mayor de edad</h1>");
+              }else if(edad >= 55) {
+                        document.write("<h1>Usted es adulto mayor</h1>");
+                    }
+        document.write("<h1>La suma es: " + "de: "+ numA + " mas " + numB + " es: " + suma + "</h1>");
+
+        switch(dia) {
+            case 1:
+                document.write("<h1>Hoy es Domingo</h1>");
+                break;
+            case 2:
+                document.write("<h1>Hoy es Lunes</h1>");
+                break;
+            case 3:
+                document.write("<h1>Hoy es Martes</h1>");
+                break;
+            case 4:
+                document.write("<h1>Hoy es Miercoles</h1>");
+                break;
+            case 5:
+                document.write("<h1>Hoy es Jueves</h1>");
+                break;
+            case 6:
+                document.write("<h1>Hoy es Viernes</h1>");
+                break;
+            case 7:
+                document.write("<h1>Hoy es Sábado</h1>");
+                break;
+            default:
+                document.write("<h1>El número ingresado no corresponde a un día de la semana.</h1>");
+        }
+    </script>
+</body>
+</html>
